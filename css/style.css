@@ -22,7 +22,7 @@ body {
 /* // CUERPO DE LA CONSOLA // */
 
 .gb-body1 {
-    background-color: orange;
+    background: linear-gradient(-75deg, rgb(232, 124, 1) 15%, rgb(255, 166, 0) 60%, rgb(254, 184, 52));
     height: 524px;
     width: 312px;
     display: flex;
@@ -34,7 +34,7 @@ body {
 }
 
 .gb-body2 {
-    background-color: rgb(254, 206, 117);
+    background: linear-gradient(-85deg, rgb(254, 149, 28) 15%, rgb(255, 175, 28) 60%, rgb(254, 204, 112));
     height: 470px;
     width: 205px;
     position: absolute;
@@ -53,10 +53,6 @@ body {
     grid-template-rows: 28fr 4fr 12fr 12fr;
     gap: 1px;
     text-align: center;
-    }
-
-.box {
-       /* background-color: blueviolet; */
     }
 
 .box-top {
@@ -122,7 +118,7 @@ body {
 }
 
 .bt-st {
-    background-color: grey;
+    background: linear-gradient(to bottom, grey, rgb(55, 55, 55));
     width: 31px;
     height: 10px;
     border-radius: 3em/2em;
@@ -227,7 +223,7 @@ body {
 .triangle {
     width: 0;
     height: 0;
-    border-left: 12px solid black;
+    border-left: 12px solid rgb(67, 67, 67);
     border-top: 6px solid transparent;
     border-bottom: 6px solid transparent;
 }
@@ -252,12 +248,14 @@ body {
 }
 
 .circle-cross {
-    background-color: black;
+    background-color:rgb(67, 67, 67);
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    border: inset 2px rgb(180, 180, 180);
+    border: inset 2px rgb(132, 132, 132);
 }
+
+/* BOTONES DERECHOS A Y B */
 
 .box-right {
         grid-column: 3 / 5;
@@ -267,15 +265,29 @@ body {
     }
 
 .button {
-        background-color: grey;
+        background: linear-gradient(to right, rgb(121, 121, 121), rgb(65, 65, 65));
         height: 36px;
         width: 36px;
         border-radius: 50%;
         margin: 9px;
+        border: outset 2px rgb(107, 71, 44);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
+.button-txt {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(70, 70, 70);
+        font-size: 25px;
+        margin-right: 9px;
+        margin-top: 27px;
+        text-shadow: 1px 2px 1px grey;
+}
+
 .button-b {
-        margin-top: 20px;
+        margin-top: 25px;
+        margin-right: 5px;
     }
 
 /* / PANTALLA / */
@@ -344,7 +356,8 @@ body {
 }
 
 .in-screen {
-    background-color: rgb(39, 39, 39);
+    background: linear-gradient(-85deg, rgb(71, 71, 71) 25%, rgb(54, 54, 54) 50%, rgb(85, 85, 85));
+    border: inset 5px rgb(108, 108, 108);
 }
 
 
