@@ -3,23 +3,22 @@ body {
     margin: 0;
 }
 
-/* /// CABECERA DE LA WEB /// */
-
-.header {
-    background-color: rgb(249, 206, 151);
-    height: 10vh;
-}
-
 /* /// CUERPO DE LA WEB /// */
 
 .main {
-    background-color: blanchedalmond;
-    height: 80vh;
+    background-image: url(../img/wood-background.webp);
+    height: 100vh;
     display: flex;
     justify-content: center;
 }
 
 /* // CUERPO DE LA CONSOLA // */
+
+
+.body-gb {
+    display: flex;
+    margin-top: 10vh;
+}
 
 .gb-body1 {
     background: linear-gradient(-75deg, rgb(232, 124, 1) 15%, rgb(255, 166, 0) 60%, rgb(254, 184, 52));
@@ -31,6 +30,8 @@ body {
     border-radius: 30em/7em;
     border-top-left-radius: 8%;
     border-top-right-radius: 8%;
+    box-shadow: 50px 50px 50px rgba(35, 19, 1, 0.689);
+
 }
 
 .gb-body2 {
@@ -81,6 +82,7 @@ body {
     flex-direction: column;
     gap: 8px;
     margin-top: 40px;
+    position: relative;
 }
 
 .right-details-1 {
@@ -170,8 +172,13 @@ body {
     width: 31px;
     height: 10px;
     border-radius: 3em/2em;
-    border: outset rgb(165, 164, 164);
+    border: outset rgb(180, 108, 31);
 }    
+
+.bt-st:hover {
+    cursor: pointer;
+    background: linear-gradient(to bottom, rgb(87, 87, 87), rgb(54, 54, 54));
+}
 
 .bt-st-bottom {
     display: flex;
@@ -269,6 +276,27 @@ body {
     border-top-right-radius: 5px;
 }
 
+
+.cross-right:hover{
+    cursor: pointer;
+    background: linear-gradient(to right, rgb(77, 76, 76), rgb(50, 50, 50));
+}
+
+.cross-left:hover{
+    cursor: pointer;
+    background: linear-gradient(to right, rgb(235, 235, 235), grey);
+}
+
+.cross-top:hover{
+    cursor: pointer;
+    background: linear-gradient(to top, rgb(109, 109, 109), rgb(198, 198, 198));
+}
+
+.cross-bottom:hover{
+    cursor: pointer;
+    background: linear-gradient(to bottom, rgb(109, 109, 109), rgb(41, 41, 41));
+}
+
 .cross-left {
     background: linear-gradient(to right, rgb(178, 178, 178), grey);
     border-bottom: outset 2px rgb(60, 60, 60);
@@ -349,6 +377,11 @@ body {
         margin-right: 5px;
     }
 
+.button:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, rgb(91, 91, 91), rgb(52, 52, 52));
+}
+
 /* / PANTALLA / */
 
 
@@ -373,6 +406,15 @@ body {
 
 .led {
     background-color: brown;
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    margin: 2px;
+}
+
+.led:hover {
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
     height: 11px;
     width: 11px;
     border-radius: 50%;
@@ -443,12 +485,4 @@ body {
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
     transform: rotate(-90deg);
-}
-
-
-/* /// PIE DE LA WEB /// */
-
-.footer {
-    background-color: rgb(185, 154, 116);
-    height: 10vh;
 }
