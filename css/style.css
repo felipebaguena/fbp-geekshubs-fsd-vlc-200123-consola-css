@@ -44,6 +44,53 @@ body {
     border-top-right-radius: 0%;
 }
 
+.left-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+}
+
+.left-details-1 {
+    background-color: rgb(236, 150, 45);
+    height: 8px;
+    width: 3px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 20%;
+}
+
+.left-details-2 {
+    background-color: rgb(241, 140, 16);
+    height: 8px;
+    width: 3px;
+    margin-top: 5px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 20%;
+}
+
+.left-details-3 {
+    background-color: rgb(234, 157, 64);
+    height: 16px;
+    width: 3px;
+    margin-top: 5px;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+}
+
+.right-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 40px;
+}
+
+.right-details-1 {
+    background-color: orange;
+    width: 3px;
+    height: 8px;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
 .gb-body-elements {
 
     height: 524px;
@@ -58,8 +105,9 @@ body {
 .box-top {
         grid-column: 1 / 5;
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: flex-end;
+        align-items: center;
     }
 
 .box-central {
@@ -100,7 +148,7 @@ body {
         width: 4px;
         height: 4px;
         border-radius: 50%;
-        border: 1px inset;
+        border: 1px inset orange;
     }
 
 .select-start {
@@ -134,18 +182,18 @@ body {
 .st-text {
     font-size: 12px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: orange;
-    text-shadow: -1px -1px 1px rgb(243, 193, 102);
+    color: rgb(236, 132, 27);
+    text-shadow: 1px -1px 1px rgb(243, 193, 102);
     margin-right: 2px;
 }
 
 
 .dot2 {
-        background-color: rgb(148, 104, 22);
+        background-color: rgb(145, 73, 14);
     }
 
 .dot1 {
-        background-color: rgb(234, 169, 49);
+        background-color: rgb(211, 121, 37);
     }
 
 
@@ -154,8 +202,19 @@ body {
         border: none;
     }
 
+.dotlight1 {
+    background-color: rgb(254, 177, 76);
+    border: 1px inset orange;
+}
+
+.dotlight2 {
+    background-color: rgb(203, 119, 16);
+}
+
 .ninten-logo {
         width: 80px;
+        opacity: 0.3;
+        filter: brightness(250%);
     }
 
 .box-left {
@@ -360,6 +419,31 @@ body {
     border: inset 5px rgb(108, 108, 108);
 }
 
+.details-top {
+    height: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+    margin-right: 135px;
+}
+
+.text-top {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(190, 127, 10);
+    font-size: 14px;
+    text-shadow: -1px -1px 1px rgb(210, 124, 26);
+
+}
+
+.triangle-top-detail {
+    width: 0;
+    height: 0;
+    border-left: 10px solid rgba(222, 137, 0, 0.82);
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    transform: rotate(-90deg);
+}
 
 
 /* /// PIE DE LA WEB /// */
