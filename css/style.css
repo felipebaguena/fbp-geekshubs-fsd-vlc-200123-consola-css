@@ -177,8 +177,11 @@ body {
 }    
 
 .bt-st:hover {
-    cursor: pointer;
     background: linear-gradient(to bottom, rgb(87, 87, 87), rgb(54, 54, 54));
+}
+
+.start-button:hover {
+    cursor: pointer;
 }
 
 .bt-st-bottom {
@@ -279,22 +282,22 @@ body {
 
 
 .cross-right:hover{
-    cursor: pointer;
+
     background: linear-gradient(to right, rgb(77, 76, 76), rgb(50, 50, 50));
 }
 
 .cross-left:hover{
-    cursor: pointer;
+
     background: linear-gradient(to right, rgb(235, 235, 235), grey);
 }
 
 .cross-top:hover{
-    cursor: pointer;
+
     background: linear-gradient(to top, rgb(109, 109, 109), rgb(198, 198, 198));
 }
 
 .cross-bottom:hover{
-    cursor: pointer;
+
     background: linear-gradient(to bottom, rgb(109, 109, 109), rgb(41, 41, 41));
 }
 
@@ -379,7 +382,6 @@ body {
     }
 
 .button:hover {
-    cursor: pointer;
     background: linear-gradient(to right, rgb(91, 91, 91), rgb(52, 52, 52));
 }
 
@@ -405,21 +407,21 @@ body {
     justify-content: center;
 }
 
-.led {
-    background-color: brown;
+.led1{
+    background-color: rgb(125, 33, 33);
     height: 11px;
     width: 11px;
     border-radius: 50%;
     margin: 2px;
 }
 
-.led:hover {
-    cursor: pointer;
-    background-color: rgb(255, 0, 0);
+.led2 {
+    background-color: rgb(255, 28, 28);
     height: 11px;
     width: 11px;
     border-radius: 50%;
     margin: 2px;
+    box-shadow:0px 0px 1em 4px rgb(255, 71, 71) ;
 }
 
 .led-r {
@@ -460,6 +462,11 @@ body {
 .in-screen {
     background: linear-gradient(-85deg, rgb(71, 71, 71) 25%, rgb(54, 54, 54) 50%, rgb(85, 85, 85));
     border: inset 5px rgb(108, 108, 108);
+}
+
+#content {
+    width: 100%;
+    height: 100%;
 }
 
 .details-top {

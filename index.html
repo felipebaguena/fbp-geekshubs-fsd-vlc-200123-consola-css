@@ -44,12 +44,28 @@
                         <div class="bezel bezel1"></div>
                         <div class="bezel bezel2">
                             <div class="bezel-left-t">
-                                <div class="led"></div>
+                                <div  id="led" class="led1"></div>
                                 <img class="led-r" src="./img/power-logo1.png" alt="led-right">
                             </div>
                             <div class="bezel-left-b">POWER</div>
                         </div>
-                        <div class="bezel in-screen" id="interior-screen"></div>
+                        <div class="bezel in-screen" id="interior-screen">
+                            <img id="content" src="./img/transparencia.png" alt="content1">
+                        </div>
+
+                        <!-- ANIMACIÓN DE ENCENDIDO -->
+
+                        <script>
+                            function changeImage(){
+                                    let displayImage = document.getElementById('content')
+                                    if (displayImage.src.match('./img/transparencia.png')){
+                                        displayImage.src = "./img/imageedit_19_8232820923.gif"
+                                    } else {
+                                        displayImage.src = "./img/transparencia.png"
+                                }
+                            }
+                        </script>
+
                         <div class="bezel"></div>
                         <div class="bezel bezel5">
                             <img class="logo1" src="./img/gb-logo.png" alt="logo-gbc">
@@ -103,7 +119,19 @@
                     <div class="select-start">
                         <div class="bt-st-top">
                             <div class="button-st bt-st select-button"></div>
-                            <div class="button-st bt-st start-button"></div>
+                            <div class="button-st bt-st start-button"  id="startanimation" onclick="changeImage()"></div>
+
+                            <script>
+
+                            const startanimation = document.getElementById('startanimation');
+                            const led = document.getElementById('led');
+
+                            startanimation.addEventListener('click', function() {
+                                led.classList.toggle('led2');
+                            });
+
+                            </script>
+
                         </div>
                         <div class="bt-st-bottom">                        
                             <div class="button-st st-text select">SELECT</div>
