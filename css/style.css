@@ -620,6 +620,11 @@ body {
     transform: rotate(90deg);
 }
 
+.content1 {
+    background-image: url(../img/imageedit_19_8232820923.gif);
+    background-size: cover;
+}
+
 .pika {
     background-image: url(../img/pika.gif);
     background-size: cover;

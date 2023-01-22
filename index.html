@@ -47,6 +47,7 @@
                         </div>
                         <div class="bezel in-screen" id="interior-screen">
                             <img id="content" class="contentclass" src="./img/transparencia.png" alt="content1">
+
                         </div>
 
                         <!-- ANIMACIÓN DE ENCENDIDO -->
@@ -231,6 +232,17 @@
         <div id="recorte"></div>
             <div id="cartridge1" class="cartridge">
 
+                <!-- <script>
+
+                const cartridge1 = document.getElementById('cartridge1');
+                const content = document.getElementById('content');
+
+                cartridge1.addEventListener('click', function() {
+                content.classList.toggle('pika');
+                });
+
+                </script> -->
+                
                 <script>
 
                 const cartridge1 = document.getElementById('cartridge1');
@@ -238,6 +250,7 @@
 
                 cartridge1.addEventListener('click', function() {
                 content.classList.toggle('pika');
+                led.classList.toggle('led2');
                 });
 
                 </script>
