@@ -169,6 +169,7 @@ body {
 }
 
 .bt-st {
+    cursor: pointer;
     background: linear-gradient(to bottom, grey, rgb(55, 55, 55));
     width: 31px;
     height: 10px;
@@ -176,13 +177,11 @@ body {
     border: outset rgb(180, 108, 31);
 }    
 
-.bt-st:hover {
+.bt-st:active {
     background: linear-gradient(to bottom, rgb(87, 87, 87), rgb(54, 54, 54));
 }
 
-.start-button:hover {
-    cursor: pointer;
-}
+
 
 .bt-st-bottom {
     display: flex;
@@ -255,6 +254,7 @@ body {
     }
 
 .cross-top {
+    cursor: pointer;
     background: linear-gradient(to right, grey, rgb(77, 76, 76));
     border-top: outset 2px rgb(60, 60, 60);
     border-left: outset 2px rgb(82, 82, 82);
@@ -263,6 +263,7 @@ body {
     border-top-left-radius: 5px;
 }
 .cross-bottom {
+    cursor: pointer;
     background: linear-gradient(to right, grey, rgb(77, 76, 76));
     border-bottom: outset 2px rgb(60, 60, 60);
     border-left: outset 2px rgb(72, 71, 71);
@@ -272,6 +273,7 @@ body {
 }
 
 .cross-right {
+    cursor: pointer;
     background: linear-gradient(to right, rgb(77, 76, 76), rgb(116, 116, 116));
     border-bottom: outset 2px rgb(60, 60, 60);
     border-top: outset 2px rgb(60, 60, 60);
@@ -281,27 +283,24 @@ body {
 }
 
 
-.cross-right:hover{
-
+.cross-right:active{
     background: linear-gradient(to right, rgb(77, 76, 76), rgb(50, 50, 50));
 }
 
-.cross-left:hover{
-
+.cross-left:active{
     background: linear-gradient(to right, rgb(235, 235, 235), grey);
 }
 
-.cross-top:hover{
-
+.cross-top:active{
     background: linear-gradient(to top, rgb(109, 109, 109), rgb(198, 198, 198));
 }
 
-.cross-bottom:hover{
-
+.cross-bottom:active{
     background: linear-gradient(to bottom, rgb(109, 109, 109), rgb(41, 41, 41));
 }
 
 .cross-left {
+    cursor: pointer;
     background: linear-gradient(to right, rgb(178, 178, 178), grey);
     border-bottom: outset 2px rgb(60, 60, 60);
     border-top: outset 2px rgb(60, 60, 60);
@@ -356,6 +355,7 @@ body {
     }
 
 .button {
+        cursor: pointer;
         background: linear-gradient(to right, rgb(121, 121, 121), rgb(65, 65, 65));
         height: 36px;
         width: 36px;
@@ -381,7 +381,7 @@ body {
         margin-right: 5px;
     }
 
-.button:hover {
+.button:active {
     background: linear-gradient(to right, rgb(91, 91, 91), rgb(52, 52, 52));
 }
 
@@ -509,6 +509,7 @@ body {
 }
 
 .cratridge-container:hover {
+    cursor: pointer;
     transform: scale(1.2);
     transition: 1s;
 }
