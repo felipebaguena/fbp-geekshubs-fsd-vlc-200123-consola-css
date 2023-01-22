@@ -9,10 +9,6 @@
 </head>
 <body>
 
-    <!-- /// CABECERA DE LA WEB /// -->
-
-    <div class="header"></div>
-
     <!-- /// CUERPO DE LA WEB /// -->
 
     <div class="main">
@@ -50,7 +46,7 @@
                             <div class="bezel-left-b">POWER</div>
                         </div>
                         <div class="bezel in-screen" id="interior-screen">
-                            <img id="content" src="./img/transparencia.png" alt="content1">
+                            <img id="content" class="contentclass" src="./img/transparencia.png" alt="content1">
                         </div>
 
                         <!-- ANIMACIÓN DE ENCENDIDO -->
@@ -65,6 +61,8 @@
                                 }
                             }
                         </script>
+
+                        
 
                         <div class="bezel"></div>
                         <div class="bezel bezel5">
@@ -121,6 +119,8 @@
                             <div class="button-st bt-st select-button"></div>
                             <div class="button-st bt-st start-button"  id="startanimation" onclick="changeImage()"></div>
 
+                            <!-- ANIMACIÓN ENCENDIDO LED -->
+
                             <script>
 
                             const startanimation = document.getElementById('startanimation');
@@ -131,6 +131,8 @@
                             });
 
                             </script>
+
+                            
 
                         </div>
                         <div class="bt-st-bottom">                        
@@ -222,6 +224,48 @@
             <div class="right-details-1"></div>
             </div>
         </div>
+
+    <!-- /// CARTUCHO POKÉMON /// -->
+
+    <div class="cratridge-container">
+        <div id="recorte"></div>
+            <div id="cartridge1" class="cartridge">
+
+                <script>
+
+                const cartridge1 = document.getElementById('cartridge1');
+                const content = document.getElementById('content');
+
+                cartridge1.addEventListener('click', function() {
+                content.classList.toggle('pika');
+                });
+
+                </script>
+
+                <div class="contenedor-texto">
+                    <div class="textosuperior">
+                        <img src="./img/cartuchologo.png" alt="cartucho-logo" id="logocartucho">
+                    </div>
+                    <div class="linea">
+                        <div class="linea1"></div>
+                        <div class="linea1"></div>
+                        <div class="linea1"></div>
+                        <div class="linea1"></div>
+                        <div class="linea1"></div>
+                    </div>
+
+                </div>
+                <div class="cartucho-bajo">
+                    <div class="bisel-car"></div>
+                    <div class="imagencentral">
+                        <img id="pokemon" src="./img/pokemon-img.png">
+                        <div class="triangle-car"></div>
+                    </div>
+                    <div class="bisel-car2"></div>
+                </div>
+            </div>
     </div>
+
+
 </body>
 </html>
