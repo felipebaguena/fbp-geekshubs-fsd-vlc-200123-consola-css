@@ -22,8 +22,6 @@ Esta réplica de la videoconsola portátil Nintendo Game Boy Color puede ejecuta
 
 - Todos los botones **cambiarán de aspecto al clicar** sobre ellos, aunque a excepción del botón START, ninguno realizará otra acción.
 
-![image](https://user-images.githubusercontent.com/122631261/213938783-f6c89264-09c3-4977-b20b-1e8f10175845.png)
-
 ### Referencias
 
 El modelo y todos los detalles que incluye están basados en la videoconsola portátil **Nintendo Game Boy Color**, lanzada al mercado en Japón el 22 de octubre de 1998.
